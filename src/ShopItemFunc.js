@@ -3,19 +3,18 @@ import React from "react";
 export default function ShopItemFunc (props) {
     const {item} = props;
     const {brand, title, description, descriptionFull, price, currency} = item;
-    console.log(brand, title, description, descriptionFull, price, currency)
 
-    let itemElement = <div class="main-content">
+    let itemElement = <div className="main-content">
             <h2>{brand}</h2>
             <h1>{title}</h1>
             <h3>{description}</h3>
-            <div class="description">
+            <div className="description">
                 {descriptionFull}
             </div>
-            <div class="highlight-window mobile"><div class="highlight-overlay"></div></div>
-            <div class="divider"></div>
-            <div class="purchase-info">
-                <div class="price">{price}{currency}</div>
+            <div className="highlight-window mobile"><div className="highlight-overlay"></div></div>
+            <div className="divider"></div>
+            <div className="purchase-info">
+                <div className="price">{price}{currency}</div>
                 <button>Добавить в корзину</button>
             </div>
         </div>
